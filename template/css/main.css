@@ -1,0 +1,924 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-Bold.ttf") format("truetype");
+    font-style: bold;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-Light.ttf") format("truetype");
+    font-style: light;
+    font-weight: light;
+}
+
+body {
+    font-family: Montserrat;
+}
+
+.banner {
+    background-color: #716FDE;
+    position: relative;
+    height: 620px;
+}
+
+.header_container {
+    height: 160px;
+    background-color: #716FDE;
+}
+
+.header_container h1 {
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-size: 72px;
+    color: #ffffff;
+    padding-top: 14px;
+    text-align: center;
+}
+
+.header {
+    padding: 35px 80px 100px 60px;
+}
+
+.header__email-image {
+    width: 19px;
+    height: 14px;
+}
+
+.header__address-image {
+    width: 10px;
+    height: 15px;
+}
+
+.header__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.header__element {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.header__element>a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.header__element-link {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+a.header__email-link {
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+a.header__address-link {
+    font-size: 12px;
+    margin-left: 9px;
+}
+
+.header__telephone-image {
+    margin-right: 10px;
+}
+
+.banner-title {
+    display: flex;
+    align-items: flex-start;
+    padding-right: 90px;
+    padding-left: 40px;
+}
+
+.banner-title__name {
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 330px;
+    line-height: 240px;
+    color: #ffffff;
+    flex: 2 1 auto;
+}
+
+.banner-title__text {
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 40px;
+    color: #ffffff;
+    line-height: 70px;
+    letter-spacing: 5px;
+    padding-bottom: 40px;
+    /*поменять ширину на нормальную!!!!!!!!!!!!!!!!*/
+}
+
+.banner-social {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    flex: 0.4 1 160px;
+}
+
+.banner_title__social-links {
+    display: flex;
+}
+
+.banner_title__social-link img {
+    width: 40px;
+    height: 30px;
+    color: #ffffff;
+}
+
+.banner_title__social-links li:not(:last-child) {
+    display: flex;
+    margin-right: auto;
+}
+
+.banner__image {
+    position: absolute;
+    width: 900px;
+    left: 180px;
+    top: 40px;
+}
+
+.navigation {
+    margin: 120px 0px 140px 70px;
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 30px;
+}
+
+.navigation li {
+    display: inline-block;
+}
+
+.navigation li:not(:first-child) {
+    text-decoration: none;
+    margin-left: 60px;
+}
+
+.navigation li:last-child {
+    display: block;
+    float: right;
+    margin-left: auto;
+    margin-right: 110px;
+}
+
+.button-nav {
+    color: black;
+    text-decoration: none;
+    width: 200px;
+    height: 40px;
+    padding: 10px 20px;
+}
+
+.button-nav:hover {
+    transition: 0.7s;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    width: 200px;
+    height: 40px;
+    padding: 10px 20px;
+}
+
+.img-cart {
+    margin-left: 10px;
+}
+
+.catalog {
+    display: flex;
+    margin: 0 auto;
+    width: 90%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.product {
+    flex-basis: 400px;
+    margin: 0px;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+
+.product-name {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+    max-width: 200px;
+    margin: 0 auto;
+    line-height: 27px;
+}
+
+.product-name a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+.product-price {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+
+/*
+    Стили для страницы входа начало
+*/
+
+.login-buttons {
+    margin-top: 80px;
+    margin-bottom: 120px;
+}
+
+.login-buttons ul {
+    width: 65%;
+    margin: 0 auto;
+}
+
+.login-buttons li:last-child {
+    float: right;
+    margin-right: 5%;
+}
+
+.login-buttons li {
+    display: inline-block;
+}
+
+.login-button {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+    width: 310px;
+    height: 30px;
+    padding: 10px 20px;
+}
+
+.login-button:hover {
+    transition: 0.7s;
+    display: block;
+    color: white;
+    background-color: black;
+}
+
+.active {
+    display: block;
+    color: white;
+    background-color: black;
+}
+
+form {
+    display: block;
+    width: 65%;
+    margin: 0px auto;
+}
+
+form input {
+    height: 40px;
+    width: 322px;
+    padding: 5px 15px;
+    font-family: Montserrat;
+    font-size: 24px;
+    margin-right: 30px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+form input::placeholder {
+    font-family: Montserrat;
+    font-size: 24px;
+    text-align: center;
+}
+
+.button-continue {
+    text-decoration: none;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 54px;
+    width: 290px;
+    height: 60px;
+    display: block;
+    background-color: #716FDE;
+    border: none;
+    text-align: center;
+    text-align: center;
+    margin: 60px auto;
+}
+
+.button-continue:hover {
+    transition: 0.2s;
+    border-radius: 10px;
+    width: 310px;
+    height: 70px;
+    line-height: 60px;
+}
+
+.button {
+    text-decoration: none;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 54px;
+    width: 290px;
+    height: 50px;
+    display: inline-block;
+    background-color: #716FDE;
+    border: none;
+}
+
+.button:hover {
+    transition: 0.2s;
+    border-radius: 10px;
+    width: 310px;
+    height: 60px;
+    line-height: 60px;
+    background-color: #716FDE;
+    border: none;
+}
+
+
+/*
+    Стили для страницы корзины
+*/
+
+.order-title {
+    padding-left: 4.5%;
+    width: 90%;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.order-list {
+    width: 80%;
+    padding-top: 80px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25%;
+    text-align: center;
+}
+
+.item-info__name {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 38px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.item-info__size {
+    align-items: flex-end;
+    padding-bottom: 40px;
+    font-family: Montserrat;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 54px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.item-price {
+    display: flex;
+    align-items: center;
+    font-family: Montserrat;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 54px;
+}
+
+.img-close {
+    display: flex;
+    align-items: center;
+}
+
+.img-close img {
+    display: flex;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+}
+
+.price {
+    width: 71.5%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    margin-left: 10.2%;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 54px;
+    text-transform: uppercase;
+}
+
+.summary-price {
+    font-weight: normal;
+}
+
+.adress-form {
+    width: 79.4%;
+    margin-top: 60px;
+    margin-left: 10.2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.adress-form__button {
+    display: inline-block;
+    text-decoration: none;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 400;
+    font-size: 24px;
+    width: 290px;
+    height: 50px;
+    background-color: #716FDE;
+    border: none;
+    margin: 100px auto;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    vertical-align: middle;
+    padding-top: 20px;
+    margin-bottom: 160px;
+}
+
+.adress-form__button:hover {
+    width: 310px;
+    height: 60px;
+    padding-top: 30px;
+    transition: 0.2s;
+    border-radius: 10px;
+}
+
+.adress {
+    width: 576px;
+    height: 54px;
+    margin-left: auto;
+}
+
+.adress::placeholder {
+    font-family: Montserrat;
+    font-size: 24px;
+    padding-left: 20px;
+    text-transform: uppercase;
+}
+
+.adress-form input {
+    font-family: Montserrat;
+    font-size: 21px;
+    padding-left: 20px;
+}
+
+.adress-form__title {
+    display: inline-block;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 54px;
+    text-transform: uppercase;
+}
+
+
+/*
+    Стили для страницы продукта начало
+*/
+
+.product-container {
+    display: flex;
+    margin: 0px auto;
+    padding: 120px 60px;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.product-images {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-description__title {
+    font-family: Montserrat;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 54px;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.product-info__name {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 54px;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.product-info__text {
+    font-family: Montserrat;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 29px;
+    letter-spacing: 0.5px;
+    width: 85%;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.product-add-cart {
+    width: 40%;
+}
+
+.product-add-cart__title {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 38px;
+    min-height: 80px;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 50px;
+}
+
+.product-add-cart__price {
+    font-family: Montserrat;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 54px;
+    letter-spacing: 2.4px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.product-add-cart__table-size {
+    display: flex;
+    align-items: center;
+    padding-left: 18%;
+}
+
+.link-table-size {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 54px;
+    letter-spacing: 2.4px;
+    margin-left: 13px;
+}
+
+.product-add-cart__sizes {
+    width: 350px;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    padding-left: 18%;
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+
+.product-size {
+    width: 90px;
+    height: 30px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.product-size a {
+    text-decoration: none;
+    color: black;
+    margin-right: -38px;
+}
+
+.product-add-cart__form {
+    display: inline-block;
+    width: 100%;
+    padding-top: 13px;
+    margin-top: 40px;
+}
+
+.product-add-cart__form a {
+    text-decoration: none;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 54px;
+    width: 320px;
+    height: 56px;
+    display: inline-block;
+    background-color: #716FDE;
+    border: none;
+    text-align: center;
+    margin: 0px auto;
+    margin-top: 20px;
+}
+
+.product-add-cart__form a:hover {
+    border-radius: 10px;
+    width: 330px;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.product-add-cart__subtitle {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.link-cart {
+    text-decoration: none;
+    color: black;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 54px;
+    letter-spacing: 2.4px;
+}
+
+.errors {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 50px;
+    padding-bottom: 60px;
+}
+
+.button-logout {
+    text-decoration: none;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 54px;
+    width: 290px;
+    height: 60px;
+    display: block;
+    background-color: Black;
+    border: none;
+    text-align: center;
+    text-align: center;
+    margin: 60px auto;
+}
+
+.button-logout:hover {
+    transition: 0.2s;
+    border-radius: 10px;
+    width: 310px;
+    height: 70px;
+    line-height: 60px;
+}
+
+.product-size:hover {
+    background-color: Black;
+    color: white;
+}
+
+.size-button:hover {
+    background-color: Black;
+    color: white;
+}
+
+.count-product {
+    font-family: Montserrat;
+    text-transform: lowercase;
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.form-order {
+    width: 90%;
+    text-align: center;
+    margin: 0px auto;
+    font-family: Montserrat;
+    font-size: 24px;
+    margin-top: 100px;
+}
+
+.form-order input {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.form-order__button {
+    margin: 0px auto;
+    text-align: center;
+    text-decoration: none;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 54px;
+    width: 320px;
+    height: 56px;
+    display: inline-block;
+    background-color: #716FDE;
+    border: none;
+}
+
+.form-order__button:hover {
+    width: 330px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+.order-subtitle {
+    text-align: center;
+}
+
+.administration {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+    padding-top: 120px;
+}
+
+.administration li {
+    margin-bottom: 60px;
+    width: 440px;
+}
+
+.administration li:hover {
+    border-radius: 10px;
+    width: 450px;
+}
+
+.administration a {
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 24px;
+    color: white;
+    padding: 10px 20px;
+    background-color: black;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-left: 80px;
+    margin-bottom: 60px;
+}
+
+td,
+th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px 20px;
+}
+
+.admin-add-product {
+    display: inline-block;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 24px;
+    color: black;
+    margin: 70px 80px;
+    padding: 10px 15px;
+    border: 1px solid black;
+}
+
+.delete-product {
+    width: 80%;
+    margin: 0px auto;
+    text-align: center;
+    margin-top: 80px;
+    line-height: 60px;
+}
+
+.order-view {
+    width: 90%;
+    margin: 0px auto;
+    text-align: left;
+    margin-top: 60px;
+}
+
+.order-view table {
+    margin-left: 0px;
+    margin-top: 20px;
+}
+
+.admin-link-back {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+}
+
+.delete-order {
+    width: 80%;
+    margin: 0px auto;
+    text-align: center;
+    margin-top: 80px;
+    line-height: 60px;
+}
+
+.admin-order-update,
+.admin-product-create,
+.admin-product-create {
+    width: 360px;
+    text-align: center;
+    margin-top: 60px;
+    line-height: 30px;
+}
+
+.administration a {
+    display: inline-block;
+    width: 300px;
+}
+
+.admin-link-back {
+    margin-left: 84px;
+    margin-bottom: 60px;
+    display: inline-block;
+}
